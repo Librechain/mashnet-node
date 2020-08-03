@@ -24,8 +24,8 @@
 mod tests;
 
 use super::error;
-use support::{debug, decl_event, decl_module, decl_storage, dispatch::DispatchResult, StorageMap};
 use frame_system::{self, ensure_signed};
+use support::{debug, decl_event, decl_module, decl_storage, dispatch::DispatchResult, StorageMap};
 
 /// The CTYPE trait
 pub trait Trait: frame_system::Trait + error::Trait {

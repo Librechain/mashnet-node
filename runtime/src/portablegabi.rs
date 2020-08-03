@@ -1,6 +1,6 @@
+use frame_system::ensure_signed;
 use sp_std::vec::Vec;
 use support::{decl_event, decl_module, decl_storage, dispatch::DispatchResult, StorageMap};
-use frame_system::ensure_signed;
 
 use crate::error;
 

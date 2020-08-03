@@ -36,12 +36,12 @@ use support::{
 };
 
 use super::{ctype, error};
+use frame_system::{self, ensure_signed};
 use sp_runtime::{
 	codec::Codec,
 	traits::{CheckEqual, Hash, IdentifyAccount, MaybeDisplay, Member, SimpleBitOps, Verify},
 	verify_encoded_lazy,
 };
-use frame_system::{self, ensure_signed};
 
 bitflags! {
 	/// Bitflags for permissions
